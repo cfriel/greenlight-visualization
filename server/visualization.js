@@ -14,12 +14,12 @@ visualization.prototype.metadata = function()
 }();
 
 
-Greenlight.Visualization = visualization.prototype;
+Greenlight.Packages.Visualization = visualization.prototype;
 
 Meteor.startup(function(){
     
     console.log("loading visualization package");
     
-    Greenlight.register_template(name, version, Greenlight.Visualization);
+    Greenlight.register_template(name, version, Greenlight.Packages.Visualization);
     
 });
