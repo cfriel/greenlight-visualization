@@ -18,7 +18,7 @@ Greenlight.Packages.Visualization = visualization.prototype;
 
 Meteor.startup(function(){
     
-    console.log("loading visualization package");
+    Greenlight.log("loading visualization package");
     
     Greenlight.register_package(name, version, Greenlight.Packages.Visualization);
     
